@@ -13,7 +13,7 @@ pipeline {
 	}
 	stage('build Docker Image'){
 	    steps{
-		sh 'docker buils -t $DOCKER_USER/4IMAGE_NAME:latest .'
+		sh 'docker build -t $DOCKER_USER/$IMAGE_NAME:latest .'
 	    }
 	}
 	stage('Push to DockerHub'){
