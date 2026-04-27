@@ -8,7 +8,7 @@ pipeline {
     stages{
 	stage('Clone code'){
 	    steps {
-		git 'https://github.com/NeeratiArchana/monitoring-devops-project.git'
+		git branch: 'main', url: 'https://github.com/NeeratiArchana/monitoring-devops-project.git'
 	    }
 	}
 	stage('build Docker Image'){
