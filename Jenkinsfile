@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment{
-        DOCKER_USER = "your-docker-username"
+        DOCKER_USER = "neeratiarchana"
 	IMAGE_NAME = "monitoring-app"
     }
     stages{
